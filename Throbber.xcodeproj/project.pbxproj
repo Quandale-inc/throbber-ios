@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		845D6DAB2910130D005008C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D6DAA2910130D005008C6 /* AppDelegate.swift */; };
 		845D6DAD2910130D005008C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D6DAC2910130D005008C6 /* SceneDelegate.swift */; };
-		845D6DAF2910130D005008C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D6DAE2910130D005008C6 /* ViewController.swift */; };
 		845D6DB42910130E005008C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845D6DB32910130E005008C6 /* Assets.xcassets */; };
 		845D6DB72910130E005008C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845D6DB52910130E005008C6 /* LaunchScreen.storyboard */; };
+		901EF9512910940200CEA5A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EF9502910940200CEA5A1 /* HomeViewController.swift */; };
+		901EF9532910940800CEA5A1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EF9522910940800CEA5A1 /* SearchViewController.swift */; };
+		901EF9552910941700CEA5A1 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EF9542910941700CEA5A1 /* NotificationViewController.swift */; };
+		901EF9572910942200CEA5A1 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EF9562910942200CEA5A1 /* MessageViewController.swift */; };
+		901EF9592910945A00CEA5A1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EF9582910945A00CEA5A1 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		845D6DA72910130D005008C6 /* Throbber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Throbber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845D6DAA2910130D005008C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845D6DAC2910130D005008C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		845D6DAE2910130D005008C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		845D6DB32910130E005008C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845D6DB62910130E005008C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845D6DB82910130E005008C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901EF9502910940200CEA5A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		901EF9522910940800CEA5A1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		901EF9542910941700CEA5A1 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		901EF9562910942200CEA5A1 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		901EF9582910945A00CEA5A1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		845D6DA92910130D005008C6 /* Throbber */ = {
 			isa = PBXGroup;
 			children = (
-				845D6DAA2910130D005008C6 /* AppDelegate.swift */,
-				845D6DAC2910130D005008C6 /* SceneDelegate.swift */,
-				845D6DAE2910130D005008C6 /* ViewController.swift */,
+				901EF94B291092E300CEA5A1 /* Resources */,
+				901EF94C2910938600CEA5A1 /* Controllers */,
 				845D6DB32910130E005008C6 /* Assets.xcassets */,
 				845D6DB52910130E005008C6 /* LaunchScreen.storyboard */,
 				845D6DB82910130E005008C6 /* Info.plist */,
 			);
 			path = Throbber;
+			sourceTree = "<group>";
+		};
+		901EF94B291092E300CEA5A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				845D6DAA2910130D005008C6 /* AppDelegate.swift */,
+				845D6DAC2910130D005008C6 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		901EF94C2910938600CEA5A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				901EF94D2910939B00CEA5A1 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		901EF94D2910939B00CEA5A1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				901EF9502910940200CEA5A1 /* HomeViewController.swift */,
+				901EF9522910940800CEA5A1 /* SearchViewController.swift */,
+				901EF9542910941700CEA5A1 /* NotificationViewController.swift */,
+				901EF9562910942200CEA5A1 /* MessageViewController.swift */,
+				901EF9582910945A00CEA5A1 /* TabBarViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845D6DAF2910130D005008C6 /* ViewController.swift in Sources */,
+				901EF9592910945A00CEA5A1 /* TabBarViewController.swift in Sources */,
+				901EF9532910940800CEA5A1 /* SearchViewController.swift in Sources */,
+				901EF9552910941700CEA5A1 /* NotificationViewController.swift in Sources */,
 				845D6DAB2910130D005008C6 /* AppDelegate.swift in Sources */,
 				845D6DAD2910130D005008C6 /* SceneDelegate.swift in Sources */,
+				901EF9512910940200CEA5A1 /* HomeViewController.swift in Sources */,
+				901EF9572910942200CEA5A1 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,12 +315,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7SA2SY6FFU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Throbber/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Throbber;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -307,12 +348,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7SA2SY6FFU;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Throbber/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Throbber;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
